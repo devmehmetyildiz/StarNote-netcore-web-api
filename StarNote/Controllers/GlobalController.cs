@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace StarNote.Controllers
 {
     [Authorize]
-    [Route("api/[controller]")]
+    [Route("api/")]
     [ApiController]
     public class GlobalController : ControllerBase
     {

@@ -8,5 +8,6 @@ namespace StarNote.DataAccess.Repositories.Abstract
 {
     public interface IGLUsersRepository : IRepository<GLUsers>
     {
+        GLUsers FindUser(string username, string password);
     }
 }

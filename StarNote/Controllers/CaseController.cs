@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace StarNote.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CaseController : ControllerBase
