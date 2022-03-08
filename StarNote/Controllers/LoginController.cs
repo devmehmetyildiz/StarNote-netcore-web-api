@@ -38,13 +38,11 @@ namespace StarNote.Controllers
         public IActionResult Login([FromBody] UserCredential userLogin)
         {
             var user = Authenticate(userLogin);
-
             if (user != null)
             {
                 var token = Generate(user);
                 return Ok(token);
             }
-
             return NotFound("User not found");
         }
 
