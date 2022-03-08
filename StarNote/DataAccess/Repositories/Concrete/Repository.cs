@@ -19,7 +19,7 @@ namespace StarNote.DataAccess.Repositories.Concrete
         }
 
         public void Add(Tentity entity)
-        {
+        {            
             _dbSet.Add(entity);
         }
 

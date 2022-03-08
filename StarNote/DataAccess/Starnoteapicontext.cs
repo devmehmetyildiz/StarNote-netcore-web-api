@@ -46,6 +46,7 @@ namespace StarNote.DataAccess
 
         public DbSet<SPDefinedcompany> SPCompany  { get; set; }
 
+       
         public DbSet<SPDefinedcostumer> SPCostumer  { get; set; }
 
         public DbSet<SPCostumerorder> SPCostumerorder  { get; set; }
