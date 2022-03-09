@@ -11,5 +11,7 @@ namespace StarNote.DataAccess.Repositories.Abstract
         List<SPJoborder> GetByIDJobOrders(string guid);
 
         List<string> Getusedstocks();
+
+        List<string> Getusedproducts();
     }
 }

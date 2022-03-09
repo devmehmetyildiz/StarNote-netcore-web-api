@@ -8,5 +8,6 @@ namespace StarNote.DataAccess.Repositories.Abstract
 {
     public interface IGLCaseRespository : IRepository<GLCase>
     {
+        List<GLCase> filteredcases();
     }
 }

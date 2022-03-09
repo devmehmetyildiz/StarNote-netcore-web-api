@@ -33,6 +33,18 @@ namespace StarNote.Controllers
             response = unitOfWork.GLCaseRespository.GetAll();           
             return response.Where(u => u.Isactive).ToList();
         }
+
+        [Route("GetAllComplate")]
+        [HttpGet]
+        public IActionResult GetAllComplate()
+        {
+            List<GLCase> response = new List<GLCase>();
+            response = unitOfWork.GLCaseRespository.filteredcases();
+            if (response.Count == 0)
+                return NotFound();
+            return Ok(response.Where(u => u.Isactive).ToList());
+        }
+
         [Route("Add")]
         [HttpPost]
         public bool Add(GLCase obj)

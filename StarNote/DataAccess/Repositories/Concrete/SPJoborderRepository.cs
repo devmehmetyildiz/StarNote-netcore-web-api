@@ -28,5 +28,10 @@ namespace StarNote.DataAccess.Repositories.Concrete
            
             return starnoteapicontext.SPJoborder.Select(u => u.Product).ToList();
         }
+
+        public List<string> Getusedproducts()
+        {
+            return starnoteapicontext.SPJoborder.Select(u => u.Product).Distinct().ToList();
+        }
     }
 }
